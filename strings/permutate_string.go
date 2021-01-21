@@ -10,7 +10,6 @@ func permute(strs []string) {
 
 	for _, ch := range strs {
 		val, ok := m[ch]
-		fmt.Println("val is ", val, ok)
 		if ok {
 			m[ch] = m[ch] + 1
 		} else {
@@ -52,7 +51,7 @@ func permuteUtil(str []string, count []int, result []string, level int) {
 }
 func main() {
 	newArr := strings.Split("gowthammmmmm", "")
-	fmt.Println(newArr)
+	
 	permute(newArr)
 
 }
