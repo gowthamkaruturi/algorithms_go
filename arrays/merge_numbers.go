@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package arrays
 
 func mergeArrays(arr1 []int, arr2 []int) []int {
 	arr1position := 0
@@ -36,9 +32,10 @@ func mergeArrays(arr1 []int, arr2 []int) []int {
 	}
 	return mergeArray
 }
-func main() {
-	a := []int{2, 4, 6, 8, 10}
-	b := []int{1, 7, 11}
-	c := mergeArrays(a, b)
-	fmt.Println(c)
-}
+
+// func main() {
+// 	a := []int{2, 4, 6, 8, 10}
+// 	b := []int{1, 7, 11}
+// 	c := mergeArrays(a, b)
+// 	fmt.Println(c)
+// }
