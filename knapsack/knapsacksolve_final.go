@@ -1,4 +1,4 @@
-package arrays
+package knapsack
 
 import (
 	"fmt"
@@ -34,5 +34,4 @@ func Knapcsacksolve(profits []int, weights []int, capacity int) int {
 	}
 	fmt.Println(dp)
 	return dp[capacity]
-
 }

@@ -51,7 +51,7 @@ func permuteUtil(str []string, count []int, result []string, level int) {
 }
 func main() {
 	newArr := strings.Split("gowthammmmmm", "")
-	
+
 	permute(newArr)
 
 }
