@@ -5,7 +5,7 @@ func SubsetSum2(a []int, sum int) bool {
 	n := len(a)
 	dp := make([]bool, n)
 	dp[0] = true
-	for s := 0; s <= sum; s++ {
+	for s := 1; s <= sum; s++ {
 		if a[0] == s {
 			dp[s] = true
 		} else {
