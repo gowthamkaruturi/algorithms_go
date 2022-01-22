@@ -1,19 +1,18 @@
-package main
+package stringalgo
 
 import (
 	"fmt"
-	"strings"
 )
 
-func permute(strs []string) {
+func Permute(strs []string) {
 	m := make(map[string]int)
 
 	for _, ch := range strs {
-		val, ok := m[ch]
+		_, ok := m[ch]
 		if ok {
 			m[ch] = m[ch] + 1
 		} else {
-			fmt.Println("i am here")
+
 			m[ch] = 1
 
 		}
@@ -48,10 +47,4 @@ func permuteUtil(str []string, count []int, result []string, level int) {
 		count[i]++
 
 	}
-}
-func main() {
-	newArr := strings.Split("gowthammmmmm", "")
-
-	permute(newArr)
-
 }
