@@ -1,5 +1,7 @@
 package arrays
 
+import "fmt"
+
 func Unique_char_string(str string) bool {
 	var char_set [256]bool
 	chars := []rune(str)
@@ -11,4 +13,19 @@ func Unique_char_string(str string) bool {
 	}
 
 	return true
+}
+
+func PallindromeIteration(s string) bool {
+	// var char_set [256]bool
+	chars := []rune(s)
+
+	// for i:=0 : i< len(chars)-1 ;i++{
+
+	// }
+	for _, ch := range chars {
+		fmt.Println(string(ch))
+
+	}
+	return false
+
 }

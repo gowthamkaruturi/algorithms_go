@@ -1,7 +1,5 @@
 package stringalgo
 
-import "fmt"
-
 func PermutationOfString(s []string) []string {
 
 	m := make(map[string]int)
@@ -30,7 +28,7 @@ func PermutationOfString(s []string) []string {
 func PermutatationUtil(resultArray []string, charArray []string, lengthArray []int, returnArray []string, level int) []string {
 
 	if level == len(resultArray) {
-		fmt.Println(resultArray)
+
 		returnArray = append(returnArray, resultArray...)
 	}
 

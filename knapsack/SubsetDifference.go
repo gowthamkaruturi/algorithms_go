@@ -40,6 +40,6 @@ func SubSetDifference(a []int, sum int) int {
 
 	}
 	sum2 := sum - sum1
-	return math.Abs(float64(sum2 - sum1))
+	return int(math.Abs(float64(sum2 - sum1)))
 
 }
