@@ -1,4 +1,4 @@
-package main
+package arrays
 
 // Your last Plain Text code is saved below:
 // Calculate a final score from a set of round scores
@@ -15,9 +15,6 @@ package main
 // [1, 2, 3, X] => 3
 
 // [1, 2, 4, S] => 13
-import (
-	"fmt"
-)
 
 func getSumAtLocation(arr []int64, loc int) int64 {
 	var value int64 = 0
@@ -65,15 +62,15 @@ func CalcuteTheScore(arr []interface{}) int64 {
 	return sumOfRounds[len(sumOfRounds)-1]
 }
 
-func main() {
-	arr1 := []interface{}{1, 2, 3}
-	arr2 := []interface{}{1, 2, 3, "x"}
-	arr3 := []interface{}{1, 2, 3, 4, "s", "s", "x"}
-	arr4 := []interface{}{1, "s", "x", 4, "s", "s", "x"}
-	arr5 := []interface{}{"x", "s", "x", 4, "s", "s", "x"}
-	fmt.Println(CalcuteTheScore(arr1))
-	fmt.Println(CalcuteTheScore(arr2))
-	fmt.Println(CalcuteTheScore(arr3))
-	fmt.Println(CalcuteTheScore(arr4))
-	fmt.Println(CalcuteTheScore(arr5))
-}
+// func main() {
+// 	arr1 := []interface{}{1, 2, 3}
+// 	arr2 := []interface{}{1, 2, 3, "x"}
+// 	arr3 := []interface{}{1, 2, 3, 4, "s", "s", "x"}
+// 	arr4 := []interface{}{1, "s", "x", 4, "s", "s", "x"}
+// 	arr5 := []interface{}{"x", "s", "x", 4, "s", "s", "x"}
+// 	fmt.Println(CalcuteTheScore(arr1))
+// 	fmt.Println(CalcuteTheScore(arr2))
+// 	fmt.Println(CalcuteTheScore(arr3))
+// 	fmt.Println(CalcuteTheScore(arr4))
+// 	fmt.Println(CalcuteTheScore(arr5))
+// }
