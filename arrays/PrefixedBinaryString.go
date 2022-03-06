@@ -1,3 +1,5 @@
 package arrays
 
-func PrefixedBinaryString()
+func PrefixedBinaryString() {
+
+}
