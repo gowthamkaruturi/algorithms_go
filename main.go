@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"com.gowtham/algorithms_go/arrays"
+	"com.gowtham/algorithms_go/graphs"
 )
 
 // func main() {
@@ -30,8 +28,16 @@ func combinationSum(candidates []int, target int) [][]int {
 	return dfs(0, 0, nil, nil)
 }
 func main() {
-	nums := []int{2, 7, 6, 3, 5, 1}
-	fmt.Println(arrays.CombinationSum(nums, 9))
-	fmt.Println(arrays.RemoveKdigits("12345677", 3))
+	// nums := []int{2, 7, 6, 3, 5, 1}
+	// fmt.Println(arrays.CombinationSum(nums, 9))
+	// fmt.Println(arrays.RemoveKdigits("12345677", 3))
+	// fmt.Println(arrays.LongestPalindrome("amama"))
+
+	g := graphs.InitGraph(4)
+	g.AddEdge(0, 1)
+	g.AddEdge(0, 2)
+	g.AddEdge(1, 3)
+	g.AddEdge(2, 3)
+	g.PrintGraph()
 
 }
