@@ -50,6 +50,8 @@ func main() {
 	// s.Add("gowtham")
 	// s.Print()
 
-	fmt.Println(arrays.WordSort("i am an indian i need some help with coding."))
-
+	//fmt.Println(m.KthLeastElement([]int{5, 8, 5, 3}, 4))
+	//fmt.Println(m.GetSumOfArrays([]int{5, 8, 5, 3}, 2))
+	input := []int{10, 20, 30}
+	fmt.Println(arrays.Solution(input, arrays.AddArray(input...)/2))
 }
